@@ -47,7 +47,7 @@ a
 
 .page-logo
 {
-    width: 230px;
+    width: 112px;
     height: auto;
 }
 
@@ -178,9 +178,9 @@ a
 {
     padding: 5px 0px;
     border-top: 3px solid grey;
-    position: absolute;
     bottom: 0;
     width: 100vw;
+    position: absolute;
 }
 
 .footer-wrapper
@@ -192,11 +192,23 @@ a
     gap: 10px;
 }
 
+@media screen and (max-height: 500px)
+{
+    .page-footer
+    {
+        position: static;
+    }
+}
+
 @media screen and (min-width: 768px)
 {
     .container
     {
         padding: 0 40px;
+    }
+    .page-logo
+    {
+        width: 230px;
     }
     .contacts-list
     {
